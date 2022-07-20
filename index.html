@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/tab_logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,8 +30,19 @@
                     </a>
                 </div>
             </nav>
-            <div class="hero--section--logo">
-                <img src="images/heroSectionLogo.png" alt="Zomato heroSectionLogo">
+            <div class="hero--section--container">
+                <img src="images/heroSectionLogo.png" alt="Zomato heroSectionLogo" class="hero--section--logo">
+                <h1 class="hero--section--title">Discover the best food & drinks in <b>Bankura</b></h1>
+                <div class="hero--section--input">
+                    <div class="input--location--icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <input class="input--location" type="text" placeholder="Kolkata">
+                    <div class="input--search--icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input class="input--search" type="text" placeholder="Search for resrurent, cuisine or a dish">
+                </div>
             </div>
         </header>
     </section>
