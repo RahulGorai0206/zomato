@@ -5,7 +5,7 @@
     font-family:'Poppins', sans-serif ;
 }
 .hero--section{
-    min-height: 60vh;
+    min-height: 65vh;
     background: url(images/heroSectionBackground.png);
     background-position: center;
     background-size: cover;
@@ -40,6 +40,57 @@
     border: 1px solid white;
     border-radius: 100%;
 }
+
+.hero--section--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    height: 50vh;
+}
+.hero--section--logo{
+    width: 280px;
+}
+.hero--section--input{
+    background: white;
+    padding: 12px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.input--location,
+.input--search{
+    border: none;
+    padding: 5px;
+    outline: none;
+}
+.input--location ::placeholder{
+    font-size: 40px;
+}
+.input--location{
+    width: 30%;
+    border-right: 2px solid #e0e0e0;
+}
+.input--location--icon{
+    color: rgb(252,124,140);
+    width: 20px;
+}
+.input--search--icon{
+    color: #8d8d8d;
+    padding-left: 10px;
+}
+.hero--section--title{
+    color: white;
+    font-weight: 300;
+    font-size: 34px
+}
+.input--search{
+    width: 70%;
+    padding-left: 13px;
+}
 @media only screen and (max-width: 600px){
     .navbar--menu .link{
         display: none;
@@ -50,13 +101,4 @@
     .hero--section{
         height: 75vh;
     }
-}
-.hero--section--logo{
-    margin-top: 110px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.hero--section--logo img{
-    height: 60px;
 }
