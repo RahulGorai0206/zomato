@@ -91,6 +91,46 @@
     width: 70%;
     padding-left: 13px;
 }
+.offer_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px 100px;
+    gap: 16px;
+}
+.card{
+    border: 1px solid rgb(228, 222, 222);
+    border-radius: 13px;
+    overflow: hidden;
+    width: 350px;
+    transition: all 300ms ease-out;
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card img{
+    height:150px ;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card h2{
+    padding: 0px 0px 5px 15px;
+    font-weight: 400;
+    font-size: 20px;
+    opacity: 80%;
+}
+.card p{
+    padding: 0px 0px 10px 15px;
+    opacity: 60%;
+    font-weight: 400;
+}
+
+
+
+
 @media only screen and (max-width: 600px){
     .navbar--menu .link{
         display: none;
