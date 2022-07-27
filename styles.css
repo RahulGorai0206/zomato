@@ -167,6 +167,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 .tranding .cards{
     position: relative;
@@ -219,7 +220,7 @@
 .card_content span{
     font-size: 15px;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     .navbar--menu .link{
         display: none;
     }
@@ -228,5 +229,17 @@
     }
     .hero--section{
         height: 75vh;
+    }
+    .hero--section--input{
+        flex-direction: column;
+        background: transparent;
+        width: 100%;
+        gap: 10px;
+    }
+    .hero--section--input i{
+        display: none;
+    }
+    .input--location .input--search{
+        border-radius: 10px;
     }
 }
