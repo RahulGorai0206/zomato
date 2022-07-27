@@ -5,17 +5,21 @@
     font-family:'Poppins', sans-serif ;
 }
 .hero--section{
-    min-height: 65vh;
+    display: flex;
+    min-height: 60vh;
     background: url(images/heroSectionBackground.png);
     background-position: center;
     background-size: cover;
+    justify-content: center;
 }
 .navbar{
     height: 60px;
+    min-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 48px 0px 20px;
+    padding: 10px;
+    gap: 200px;
     font-weight: 300;
 }
 .link--left{
@@ -54,12 +58,12 @@
 }
 .hero--section--input{
     background: white;
-    padding: 12px;
+    padding: 10px;
     border-radius: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 65%;
 }
 .input--location,
 .input--search{
@@ -91,13 +95,17 @@
     width: 70%;
     padding-left: 13px;
 }
-.offer_container{
+.container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 40px 100px;
-    gap: 16px;
+    margin-top: 40px ;
+    gap: 18px;
+}
+.offer_container{
+    align-items: center;
+    justify-content: center;
 }
 .card{
     border: 1px solid rgb(228, 222, 222);
@@ -127,10 +135,90 @@
     opacity: 60%;
     font-weight: 400;
 }
-
-
-
-
+.collections{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.collections_text{
+    font-size: 17px;
+    font-weight: 200;
+    min-width: 57%;
+    padding-top: 100px;
+    justify-content: flex-start;
+}
+.collections_text h1{
+    font-size: 33px;
+    font-weight: 400;
+ }
+.collection_list{
+    display: flex;
+    gap: 110px;
+}
+.collection_list a{
+    text-decoration: none;
+    color: red;
+}
+.tranding{
+    margin-top: 40px;
+    display: flex;
+    min-width: 57%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.tranding .cards{
+    position: relative;
+    height: 320px;
+    min-width: 265px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px;
+    color: white;
+}
+.card1{
+    background-image: url(https://b.zmtcdn.com/data/collections/b22194cb38ed18a5200b387ad8f243f0_1582015799.jpg);
+}
+.card2{
+    background-image: url(https://b.zmtcdn.com/data/collections/f60eb469dbcdadaaa48c8be4f5ba48b3_1646040552.png);
+}
+.card3{
+    background-image: url(https://b.zmtcdn.com/data/collections/899ae6819c98bec9fc2c794261deb4ca_1633350337.jpg);
+}
+.card4{
+    background-image: url(https://b.zmtcdn.com/data/collections/14fa741ee65b838680a95a4cd7b9faa4_1582201565.jpg);
+}
+.cards h1{
+    font-size: 25px;
+    font-weight: 300;
+}
+.overlay {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.05) 50%,
+      rgba(0, 0, 0, 0.05) 85%
+    );
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.card_content{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    padding: 5px 15px;
+}
+.card_content h1{
+    font-size: 18px;
+}
+.card_content span{
+    font-size: 15px;
+}
 @media only screen and (max-width: 600px){
     .navbar--menu .link{
         display: none;
