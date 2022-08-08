@@ -161,7 +161,7 @@
     color: red;
 }
 .tranding{
-    margin-top: 40px;
+    margin-top: 35px;
     display: flex;
     min-width: 57%;
     justify-content: center;
@@ -220,6 +220,145 @@
 .card_content span{
     font-size: 15px;
 }
+.places{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+.places h1{
+    width: 57%;
+    font-size: 35px;
+    font-weight: 350;
+}
+.location{
+    display: flex;
+    width: 57%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 45px;
+}
+.location_details{
+    border: 1px solid rgb(216, 215, 215);
+    border-radius: 7px;
+    padding: 10px 175px 10px 15px;
+    cursor: pointer;
+}
+.location_details:hover{
+    box-shadow: 3px 3px 3px #d3d3d3;
+    transition: 400ms;
+}
+.location h2{
+    opacity: 80%;
+    font-size: 20px;
+    font-weight: 400;
+}
+.location p{
+    font-weight: 150;
+}
+.app{
+    background: rgb(255, 251, 247);
+    margin-top: 100px;
+    height: 52vh;
+    display: flex;
+    justify-content: center;
+}
+.app-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.banner{
+    width: 250px;
+}
+.app-content{
+    width: 60%;
+}
+.app-content h1{
+    font-size: 50px;
+    font-weight: 400;
+}
+.app-content p{
+    font-size: 17px;
+    font-weight: 150;
+    padding: 10px;
+}
+.app-radio input{
+    height: 15px;
+    width: 15px;
+    accent-color: rgb(223, 103, 103);
+}
+.app-radio{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.app-input input{
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid rgb(192, 187, 187);
+    outline:navy;
+}
+.app-input ::placeholder{
+    font-size: 20px;
+    font-weight: 100;
+}
+.app-input button{
+    padding: 11px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(239, 79, 95);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 300;
+}
+.app-link img{
+    height: 40px;
+}
+.app-link p{
+    opacity: 50%;
+    font-size: 15px;
+}
+.explore{
+    margin-bottom: 20px;
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(252, 252, 252);
+}
+.explore--content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 57%;
+}
+.explore--content h1{
+    font-size: 30px;
+    font-weight: 400;
+}
+.explore--button{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.explore--button button{
+    padding: 18px 20px;
+    border-radius: 7px;
+    background-color: white;
+    border: 1px solid rgb(228, 221, 221);
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 80%;
+}
 @media only screen and (max-width: 800px){
     .navbar--menu .link{
         display: none;
@@ -242,4 +381,91 @@
     .input--location .input--search{
         border-radius: 10px;
     }
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer--con{
+    width: 57%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer--top img{
+    height: 30px;
+}
+.footer--top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 0px;
+}
+.footer--button{
+    display: flex;
+    gap: 15px;
+}
+.footer--button button{
+    background-color: white;
+    border-radius: 7px;
+    font-size: 18px;
+    padding: 3px 15px;
+    border: 1px solid rgb(187, 185, 185);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-between;
+}
+.flag{
+    width: 20px;
+    object-fit: cover;
+}
+.footer--about{
+    display: flex;
+    width: 100%;
+    flex: 1;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.about--zomato img{
+    height: 40px;
+}
+.about--zomato{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+.about--zomato h1{
+    font-size: 15px;
+    opacity: 80%;
+    padding: 7px 0px;
+}
+.about--zomato p{
+    font-size: 14px;
+    opacity: 60%;
+    font-weight: 250;
+}
+.footer--icon{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.footer--icon button{
+    height: 22px;
+    width: 22px;
+    border-radius: 11px;
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 2px;
+}
+.footer--text{
+    margin-top: 30px;
+    padding: 20px 0px;
+    font-size: 13px;
+    font-weight: 200;
+    border-top: 1px solid rgb(196, 189, 189);
 }
